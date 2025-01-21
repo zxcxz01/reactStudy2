@@ -1,8 +1,8 @@
-import './App.css'
-import { useState, useRef } from 'react'
-import Header from './components/Header'
-import Editor from './components/Editor'
-import List from './components/List'
+import "./App.css";
+import { useState, useRef } from "react";
+import Header from "./components/Header";
+import Editor from "./components/Editor";
+import List from "./components/List";
 const mockData = [
   {
     id: 0,
@@ -38,13 +38,24 @@ function App() {
     setTodos([newTodo, ...todos]);
   };
 
+  const onUpdate = (targetId) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === targetId ? { ...todo, isDone: !todo.isDone } : todo
+      )
+    );
+  };
+
+  const onDelete = (targetId) => {
+    setTodos(todos.filter((todo) => todo.id !== targetId));
+  };
+
   return (
-    <div className='App'>
+    <div className="App">
       <Header />
       <Editor onCreate={onCreate} />
-      <List todos={todos}/>
+      <List todos={todos} onUpdate={onUpdate} onDelete={onDelete} />
     </div>
-
   );
 }
 
