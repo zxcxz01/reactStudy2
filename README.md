@@ -1,8 +1,6 @@
-# React + Vite
+# <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="40" height="40"> React + Vite 공부하기 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🗓하루 일정표에 오늘 할 일, 검색, 추가/삭제 기능
+<br>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![react2](https://github.com/user-attachments/assets/72bae40c-d212-45a3-9236-621e9a4cef07)
